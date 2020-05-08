@@ -238,6 +238,8 @@ footer nav a {
         display: flex;
         flex-direction: column;
         align-content: center;
+        padding:2%;
+        
     }
 
     .top-content .text-container{
@@ -251,9 +253,12 @@ footer nav a {
     .top-content{
         font-size: 1.5625rem;
     }
-
+    .middle-content{
+        padding-left: 2%;
+    }
     .middle-content h2 {
         font-size: 1.875rem;
+       
     }
 
     .middle-content .boxes{
@@ -335,6 +340,8 @@ footer nav a {
         #jumboPicture{
             width:100%;
         }
+
+        
         .middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
             width: 40%;
             margin: 1.25rem 6%;
@@ -343,8 +350,24 @@ footer nav a {
 
             .bottom-content{
                 flex-direction: column;
-
             }
+
+            .bottom-content .text-container1{
+                width:100%;
+                padding: 2%;
+            }
+        
+            .bottom-content .text-container2{
+                width:100%;
+                padding: 2%;
+            }
+        
+            .bottom-content .text-container3{
+                width:100%;
+                padding: 2%;
+            }
+        
+            
 
             footer nav {
                 display: flex;
