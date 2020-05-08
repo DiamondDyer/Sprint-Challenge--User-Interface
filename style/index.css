@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -51,9 +51,15 @@ table {
     box-sizing: border-box;
 }
 
+*{
+    border: 1px solid red;
+    max-width:100%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +75,40 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    padding-left: 0%;
+    font-size: 14px;
+}
+
+.logo{
+    padding-bottom: 4%;
+}
+
+.links{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#jumboPicture{
+    padding-bottom: 2%;
 }
 
 .top-content {
@@ -99,17 +139,56 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.box1{
+    background:teal;
+}
+
+.box2{
+    background:gold;
+}
+
+.box3{
+    background:cadetblue;
+}
+
+.box4{
+    background:coral;
+}
+
+.box5{
+    background:crimson;
+}
+
+.box6{
+    background:forestgreen;
+}
+
+.box7{
+    background:darkorchid
+}
+
+.box8{
+    background:hotpink;
+}
+
+.box9{
+    background:indigo;
+}
+
+.box10{
+    background:dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +222,123 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 800px){
+    .logo{
+        padding: 2%;
+    }
+
+    header nav a{
+        font-size: 30px;
+    }
+
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .top-content .text-container{
+        width: 100%;
+    }
+
+    .top-content h2{
+        font-size: 30px;
+    }
+
+    .top-content{
+        font-size: 25px;
+    }
+
+    .middle-content h2 {
+        font-size: 30px;
+    }
+
+    .middle-content .boxes{
+        padding: %;
+    }
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+    width: 25%;
+    height: 200px;
+    margin: 20px 5%;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .bottom-content h2{
+        font-size: 30px;
+    }
+    
+    .bottom-content {
+        font-size:25px;
+        flex-direction: row;
+
+    }
+
+    .bottom-content .text-container:last-child{
+       order:3;
+    }
+
+    footer {
+        width: 100%;
+        background: black;
+    }
+    
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 8%;
+        font-size: 30px;
+    }
+    
+    footer nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1%
+        
+    }
+
+    @media(max-width: 500px){
+        header nav{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .links{
+            display: flex;
+            flex-direction: column;
+        }
+
+        header nav a{
+            padding:2%;
+        }
+
+        #jumboPicture{
+            width:100%;
+        }
+        .middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+            width: 40%;
+            margin: 20px 6%;
+            flex-direction: column;
+            }
+
+            .bottom-content{
+                flex-direction: column;
+
+            }
+
+            footer nav {
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+    }
+      
+   
 }
